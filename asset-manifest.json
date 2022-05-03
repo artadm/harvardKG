@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e2f6ba1.css",
+    "main.js": "/static/js/main.c6b3acca.js",
+    "static/media/school_video1.mov": "/static/media/school_video1.28c48b1d424fe6b41876.mov",
+    "static/media/classes_thumb.png": "/static/media/classes_thumb.6a67655b9a7bd2e0d077.png",
+    "static/media/school_building.jpg": "/static/media/school_building.9f870162c3e1a7f9a1fd.jpg",
+    "static/media/about.jpg": "/static/media/about.a551a90de9792f3ebbac.jpg",
+    "static/media/art_thumb.png": "/static/media/art_thumb.b434ef4782b4dbe7399c.png",
+    "static/media/kinoteatr_thumb.png": "/static/media/kinoteatr_thumb.327305fb6ed81dbbe2f3.png",
+    "static/media/football_thumb.png": "/static/media/football_thumb.0ef2b3b7446f8dfbced8.png",
+    "static/media/dance_thumb.png": "/static/media/dance_thumb.6c4139beecb107c7ad06.png",
+    "static/media/cofeinia.jpg": "/static/media/cofeinia.c9c7e35087feee4379b4.jpg",
+    "static/media/chess_thumb.png": "/static/media/chess_thumb.b26486c8414f89050988.png",
+    "static/media/about_bg.jpg": "/static/media/about_bg.ca59d2eb733bc9803ddb.jpg",
+    "static/media/news1.jpg": "/static/media/news1.65650fb38b9fc1603fb1.jpg",
+    "static/media/fight.jpg": "/static/media/fight.006588206705884941c6.jpg",
+    "static/media/stolovaya.jpg": "/static/media/stolovaya.c1dd08dbed84048786d5.jpg",
+    "static/media/busket.jpg": "/static/media/busket.161397e113be6627a630.jpg",
+    "static/media/atrium.jpg": "/static/media/atrium.03a1577fabe3340b2672.jpg",
+    "static/media/robottechs.jpg": "/static/media/robottechs.935e4ea96181e278c580.jpg",
+    "static/media/pool.jpg": "/static/media/pool.e445f2d6fa6aed007190.jpg",
+    "static/media/court.jpg": "/static/media/court.bed269bb37884bf292fa.jpg",
+    "static/media/pupil.png": "/static/media/pupil.70f02185feb0430a37f0.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/lang.svg": "/static/media/lang.a936e1505982d765a6366688641b4748.svg",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/nationality.svg": "/static/media/nationality.2297c24627725f701ce5495420527e28.svg",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/pupils.svg": "/static/media/pupils.b3e2b3fae2fb8c7c6e7d999c90d5d19f.svg",
+    "index.html": "/index.html",
+    "main.7e2f6ba1.css.map": "/static/css/main.7e2f6ba1.css.map",
+    "main.c6b3acca.js.map": "/static/js/main.c6b3acca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e2f6ba1.css",
+    "static/js/main.c6b3acca.js"
+  ]
+}
