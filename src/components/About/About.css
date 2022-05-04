@@ -1,0 +1,109 @@
+.about__school {
+    padding: 10.5rem 5.5rem 5.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.about__school-atmosfere::after,
+.about__school-about::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.about__school-about {
+    background: url('../../assets/mainpage/about__school/about_bg.jpg') center no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+.about__school-atmosfere {
+    background: url('../../assets/mainpage/about__school/cofeinia.jpg') center no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+.about__school-mission {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.about__school.about__school-mission h1 {
+    color: #000;
+    width: 100%;
+}
+
+.about__school-mission .about__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+    width: 50%;
+    margin-right: 3rem;
+    max-width: 28.3rem;
+    width: 100%;
+    letter-spacing: .04em;
+}
+
+.about__school-mission img {
+    width: 100%;
+    max-width: 28.3rem;
+    height: auto;
+}
+
+
+.about__school h1 {
+    color: var(--color-white);
+    margin-bottom: 4.125rem;
+}
+
+.about__text {
+    font-size: 1.6rem;
+    color: var(--color-white);
+}
+
+
+/* ===== middle devices */
+@media screen and (max-width: 1024px) {
+    .about__school {
+        padding-top: 5.5rem;
+    }
+
+    .about__school-mission .about__text {
+        margin: 0 0 1.5rem
+    }
+
+    .about__text {
+        font-size: 1.2rem;
+    }
+
+    .about__school h1 {
+        font-size: 1.75rem;
+    }
+}
+
+
+/* ===== small devices */
+@media screen and (max-width: 680px) {
+    .about__school {
+        padding: 2.5rem 0.5rem 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .about__school h1 {
+        margin-bottom: 2.125rem;
+    }
+
+    .about__text {
+        font-size: 1rem;
+    }
+}

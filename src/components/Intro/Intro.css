@@ -1,0 +1,129 @@
+.intro {
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 27rem;
+}
+
+.intro::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -9;
+    background: #000;
+    opacity: 0.5;
+}
+
+.intro__title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.intro video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -11;
+}
+
+
+.intro__socials {
+    position: absolute;
+    left: 2rem;
+    bottom: 4.2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.intro__socials span {
+    color: var(--color-light);
+    position: relative;
+    margin-right: 5rem;
+    cursor: default;
+    transition: var(--transition);
+}
+
+
+.intro__socials span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -3.75rem;
+    width: 2.5rem;
+    height: 1px;
+    background-color: var(--color-light);
+}
+
+.intro__socials-icon {
+    color: var(--color-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 1.2rem;
+    transition: var(--transition);
+}
+
+
+.intro__socials-icon:hover {
+    color: var(--color-primary);
+}
+
+.intro__idiom {
+    position: absolute;
+    bottom: -20rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96%;
+    padding: 10.5rem 5.5rem 5.5rem;
+    background: var(--color-bg) url('../../assets/pupil.png') center no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.intro__idiom h1 {
+    color: var(--color-white);
+}
+
+
+
+
+
+/* ===== middle devices */
+@media screen and (max-width: 1024px) {
+    .intro {
+        height: 56vh;
+    }
+
+    .intro__title,
+    .intro__idiom h1 {
+        font-size: 2.2rem;
+    }
+
+    .intro__idiom {
+        padding: 6.5rem 0.5rem 6.5rem;
+        bottom: -17rem;
+        background-position-y: 100%;
+    }
+}
+
+
+/* ===== small devices */
+@media screen and (max-width: 600px) {
+
+    .intro__title,
+    .intro__idiom h1 {
+        font-size: 1.2rem;
+    }
+}

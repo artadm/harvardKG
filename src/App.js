@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {createContext} from "react";
+import Intro from "./components/Intro/Intro";
+import Header from './components/header/Header'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Programm from "./components/Programm/Programm";
+import About from "./components/About/About";
+import Courses from "./components/Courses/Courses";
+import News from "./components/News/News";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Contacts from "./components/Contacts/Contacts";
+import Footer from './components/Footer/Footer'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Header />
+
+      <Intro />
+      <Programm/>
+      <About/>
+      <Courses/>
+      <News/>
+      <Contacts/>
+      <Footer/>
+      
+    </>
   );
-}
+};
 
 export default App;
