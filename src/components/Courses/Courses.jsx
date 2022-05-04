@@ -17,6 +17,7 @@ import Football from '../../assets/mainpage/courses/football_thumb.png'
 import Gymnastics from '../../assets/mainpage/courses/dance_thumb.png'
 import Fight from '../../assets/mainpage/courses/fight.jpg'
 import Modal from 'react-modal'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Courses = () => {
 
@@ -44,32 +45,43 @@ const Courses = () => {
     return (
         <section className='courses'>
             <div className="container courses__container">
-                <div className="courses__idioms">
-                    <article>ШКОЛА – место , где ваш ребенок проводит большую часть своего детства</article>
-                    <article>Мы делам все возможное, чтобы ему было здесь комфортно и интересно</article>
-                </div>
+                <AnimationOnScroll animateIn="animate__slideInLeft" animateOut="animate__slideOutLeft">
+                    <div className="courses__idioms">
+                        <article>ШКОЛА – место , где ваш ребенок проводит большую часть своего детства</article>
+                        <article>Мы делам все возможное, чтобы ему было здесь комфортно и интересно</article>
+                    </div>
+                </AnimationOnScroll>
+
+
 
                 <div className="courses__gallery  courses__gallery-first">
-                    <ul>
-                        {images1.map((el) =>
-                            <li key={el.src}>
-                                <span>{el.content}</span>
-                                <img src={el.src} alt="" />
-                            </li>
-                        )}
-                    </ul>
+                    <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut">
+                        <ul>
+                            {images1.map((el) =>
+                                <li key={el.src}>
+                                    <span>{el.content}</span><img src={el.src} alt="" />
+                                </li>
+                            )}
+                        </ul>
+                    </AnimationOnScroll>
                 </div>
 
+
+
                 <div className="courses__gallery  courses__gallery-second">
-                    <h2>Спортивное развитие вашего ребенка в Harvard Olympic Center
-                    </h2>
-                    <ul>
-                        {images2.map((el) =>
-                            <li key={el.src}>
-                                <span>{el.content}</span><img src={el.src} alt="" />
-                            </li>
-                        )}
-                    </ul>
+                    <AnimationOnScroll animateIn="animate__slideInRight" animateOut="animate__slideOutRight">
+                        <h2>Спортивное развитие вашего ребенка в Harvard Olympic Center
+                        </h2>
+                    </AnimationOnScroll>
+                    <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut">
+                        <ul>
+                            {images2.map((el) =>
+                                <li key={el.src}>
+                                    <span>{el.content}</span><img src={el.src} alt="" />
+                                </li>
+                            )}
+                        </ul>
+                    </AnimationOnScroll>
                 </div>
 
             </div>

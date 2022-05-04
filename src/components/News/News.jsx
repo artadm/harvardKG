@@ -3,6 +3,7 @@ import './News.css'
 import Slider from "react-slick";
 import NewsIMG1 from '../../assets/mainpage/news/news1.jpg'
 import NewsItem from './NewsItem';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const News = () => {
     const newslist = [
@@ -53,18 +54,20 @@ const News = () => {
     };
     return (
         <section className='news'>
-            <div className="container news__container">
-                <h1>
-                    Новости и события
-                </h1>
+            <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeOut">
+                <div className="container news__container">
+                    <h1>
+                        Новости и события
+                    </h1>
 
-                <Slider {...settings}>
-                    {newslist.map(el =>
-                        <NewsItem key={el.href} props={el} />)}
-                </Slider>
-            </div>
+                    <Slider {...settings}>
+                        {newslist.map(el =>
+                            <NewsItem key={el.href} props={el} />)}
+                    </Slider>
+                </div>
 
-            <a className='news__add' href="http://www.harvard.kg/">Все новости</a>
+                <a className='news__add' href="http://www.harvard.kg/">Все новости</a>
+            </AnimationOnScroll>
         </section>
     )
 }

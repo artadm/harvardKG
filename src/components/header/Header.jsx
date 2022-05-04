@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { useRef } from 'react'
 
+
 const Header = () => {
     const [toggle, setToggle] = useState(false)
     const nav = useRef()
@@ -42,9 +43,10 @@ const Header = () => {
 
     return (
         <header>
+
             <div className="container header__container">
-                <div className="header__logo"><img src={Logo} alt="" /> Harvard International School</div>
-                <div ref={nav} className={toggle ? 'header__nav active' : 'header__nav'}>
+                <div className={"header__logo animate__animated animate__bounce animate__slideInLeft"}><img src={Logo} alt="" /> Harvard International School</div>
+                <div ref={nav} className={toggle ? 'header__nav active' : 'header__nav ' + 'animate__animated animate__slideInRight'}>
                     <nav>
                         <h3 className='header__nav-title'>Menu</h3>
                         <ul>
